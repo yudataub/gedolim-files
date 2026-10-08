@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מצגות על שמעון בן שטח</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0b0b12;
+      --bg2:#171728;
+      --card:#101026cc;
+      --text:#f5f5ff;
+      --muted:#b8b8d6;
+      --accent:#ff6a00;
+      --accent2:#ffb100;
+      --border:rgba(255,255,255,.12);
+      --shadow: 0 14px 40px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Heebo", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(255,106,0,.22), transparent 55%),
+                  radial-gradient(900px 600px at 85% 20%, rgba(255,177,0,.18), transparent 52%),
+                  linear-gradient(180deg, var(--bg1), var(--bg2));
+      color:var(--text);
+      padding:28px 16px;
+      direction:rtl;
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+    }
+    .header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:18px;
+    }
+    .titleBox{
+      padding:16px 18px;
+      border:1px solid var(--border);
+      background: linear-gradient(135deg, rgba(255,106,0,.14), rgba(255,255,255,.04));
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      width:100%;
+    }
+    h1{
+      margin:0;
+      font-size: clamp(22px, 3vw, 34px);
+      letter-spacing:.2px;
+      font-weight:900;
+    }
+    .sub{
+      margin-top:8px;
+      color:var(--muted);
+      font-size: 15px;
+      line-height:1.5;
+    }
+    .card{
+      margin-top:18px;
+      border:1px solid var(--border);
+      background: rgba(16,16,38,.65);
+      border-radius:22px;
+      box-shadow: var(--shadow);
+      padding:18px;
+      overflow:hidden;
+      position:relative;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: linear-gradient(135deg, rgba(255,106,0,.35), rgba(255,177,0,.20), transparent 55%);
+      filter: blur(18px);
+      opacity:.55;
+      z-index:0;
+    }
+    .card > *{ position:relative; z-index:1; }
+    .links{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap:14px;
+      margin-top:12px;
+    }
+    .linkTile{
+      border:1px solid rgba(255,255,255,.14);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius:18px;
+      padding:14px;
+      text-decoration:none;
+      color:var(--text);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      min-height:110px;
+    }
+    .linkTile:hover{
+      transform: translateY(-3px);
+      border-color: rgba(255,177,0,.55);
+      background: linear-gradient(180deg, rgba(255,177,0,.16), rgba(255,255,255,.03));
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-weight:800;
+      color: #ffd6a8;
+      font-size:14px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, #fff, var(--accent));
+      box-shadow: 0 0 0 4px rgba(255,106,0,.18);
+    }
+    .linkTitle{
+      font-weight:900;
+      font-size:16px;
+      line-height:1.25;
+    }
+    .url{
+      color:var(--muted);
+      font-size:13px;
+      word-break:break-word;
+      line-height:1.4;
+    }
+    .footerNote{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.6;
+    }
+    .btnRow{
+      margin-top:14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:800;
+      transition: transform .18s ease, border-color .18s ease;
+    }
+    .btn:hover{
+      transform: translateY(-2px);
+      border-color: rgba(255,106,0,.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="titleBox">
+        <h1>מצגות על סיפורו של שמעון בן שטח</h1>
+        <div class="sub">
+          בדף זה יש רק קישור לפתיחת המצגות—בלי הטמעה של הצפייה בדף עצמו.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="badge"><span class="dot"></span> Gamma • 3 מצגות</div>
+
+      <div class="links">
+        <a class="linkTile" href="https://gamma.app/docs/-ksl4cmzw2jmi5jm" target="_blank" rel="noopener noreferrer">
+          <div class="linkTitle">מצגת 1: השבת האבידה עם הגוי</div>
+          <div class="url">פתיחה בדפדפן (Gamma)</div>
+        </a>
+
+        <a class="linkTile" href="https://gamma.app/docs/-ksl4cmzw2jmi5jm" target="_blank" rel="noopener noreferrer">
+          <div class="linkTitle">מצגת 2: השבת האבידה עם הגוי</div>
+          <div class="url">פתיחה בדפדפן (Gamma)</div>
+        </a>
+
+        <a class="linkTile" href="https://gamma.app/docs/-ksl4cmzw2jmi5jm" target="_blank" rel="noopener noreferrer">
+          <div class="linkTitle">מצגת 3: הקמת תלמודי תורה לילדים</div>
+          <div class="url">פתיחה בדפדפן (Gamma)</div>
+        </a>
+      </div>
+
+      <div class="btnRow">
+        <a class="btn" href="https://gamma.app/docs/-ksl4cmzw2jmi5jm" target="_blank" rel="noopener noreferrer">
+          פתח את הדף ב-Gamma
+        </a>
+      </div>
+
+      <div class="footerNote">
+        טיפ: בתוך Gamma אפשר לבחור את המצגת הרצויה מתוך המסך שם.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
